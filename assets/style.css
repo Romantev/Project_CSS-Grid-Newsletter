@@ -1,0 +1,135 @@
+@font-face {
+    font-family: garamond;
+    src: url(./CormorantGaramond-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 224);
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --space-out: 5vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    font-size: 1.7vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+/* HEADER */
+
+header {
+    margin: 0 var(--space-out);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+span {
+    font-size: 3vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px double black;
+    border-bottom: 4px double black;
+    padding: 3px;
+}
+
+nav p {
+    font-size: 1vw;
+}
+
+/* MAIN */
+
+main {
+    margin: 2vw var(--space-out);
+    display: flex;
+}
+
+/* SEACTION ARTIKEL */
+
+.artikel {
+    width: 80vw;
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "text1 text2 bild bild bild"
+    "text3 text4 bild bild bild"
+    "text5 text6 bild bild bild";
+    gap: 1vw;
+}
+
+.artikel h2 {
+    font-size: 2.5vw;
+    grid-area: header;
+    text-align: center;
+}
+
+.bild {
+    grid-area: bild;
+}
+
+/* SEACTION SPONSORS */
+
+.sponsors {
+    width: 20vw;
+    text-align: center;
+    margin-left: 1vw;
+}
+
+.sponsors h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+aside {
+    font-size: 3.5vw;
+    font-weight: 600;
+    border: 4px double black;
+    padding: 1vw 0;
+    margin-bottom: 1.5vw;
+}
+
+.sponsors div {
+    border: 4px double black;
+    padding: 1vw 0;
+    margin-bottom: 1.5vw;
+}
+
+.sponsors div p{
+    padding: 0 3vw;
+}
+
+.sponsors div a {
+    font-size: 1.2vw;
+    color: rgba(36, 36, 79, 0.62);
+    text-underline-position: under;
+}
+
+.sponsors img {
+    border: 4px double black;
+    padding: 1.5vw;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 1;
+}
