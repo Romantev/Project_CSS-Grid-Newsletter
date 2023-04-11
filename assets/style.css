@@ -9,6 +9,7 @@
     box-sizing: border-box;
     background-color: rgb(233, 233, 224);
     color: #333;
+    font-family: garamond;
 }
 
 html {
@@ -103,7 +104,7 @@ main {
 }
 
 aside {
-    font-size: 3.5vw;
+    font-size: 3.7vw;
     font-weight: 600;
     border: 4px double black;
     padding: 1vw 0;
